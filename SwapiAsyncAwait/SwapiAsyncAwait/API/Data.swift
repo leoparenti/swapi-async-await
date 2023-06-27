@@ -1,11 +1,5 @@
 import Foundation
 
-struct SwapiResponse: Codable {
-    let count: Int
-    let next: String?
-    let results: [Figure]
-}
-
 // People
 public struct Figure: Codable, Hashable {
     let birthYear, created, edited, eyeColor: String

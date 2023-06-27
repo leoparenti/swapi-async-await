@@ -1,16 +1,6 @@
 import UIKit
 
-struct DetailModel {
-    let name: String
-    let vehicles: [String]
-    let films: [String]
-    
-    static func create(figure: Figure, vehicles: [Vehicle], films: [Film]) -> DetailModel {
-        DetailModel(name: figure.name, vehicles: vehicles.map{ $0.name }, films: films.map{ $0.title })
-    }
-}
-
-class DetailViewController: UIViewController {
+class DetailViewController: ViewController {
     var model: DetailModel
     
     let titleLabel: UILabel = {
@@ -50,9 +40,9 @@ class DetailViewController: UIViewController {
         super.viewDidAppear(animated)
     }
     
-    init(model: DetailModel) {
+    init(model: DetailModel, navigator: Navigator) {
         self.model = model
-        super.init(nibName: nil, bundle: nil)
+        super.init(navigator: navigator)
     }
     
     required init?(coder: NSCoder) {
