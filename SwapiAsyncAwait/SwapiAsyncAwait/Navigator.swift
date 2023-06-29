@@ -14,7 +14,7 @@ final class Navigator {
             case .main:
                 return UINavigationController.create(HomeViewController(navigator: self))
             case .detail(let model):
-                return DetailViewController(model: model, navigator: self)
+                return DetailViewController.create(model: model, navigator: self)
 //            case .alert(let title, let message):
 //                return UIAlertController.create(title: title,
 //                                                message: message)

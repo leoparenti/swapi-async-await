@@ -26,6 +26,7 @@
 		EC2052DB2A4ADC750027C9A5 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2052DA2A4ADC750027C9A5 /* UINavigationController+.swift */; };
 		EC2052E02A4AE1D10027C9A5 /* DownloadTableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2052DE2A4AE1D10027C9A5 /* DownloadTableViewCell+.swift */; };
 		EC2052E22A4AE2840027C9A5 /* DownloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2052E12A4AE2840027C9A5 /* DownloadTableViewCell.swift */; };
+		EC2052E52A4C28550027C9A5 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2052E42A4C28550027C9A5 /* UIImageView+.swift */; };
 		ECF17DEC27BAA36000E22069 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF17DEB27BAA36000E22069 /* Data.swift */; };
 		ECF17DEE27BAFBA300E22069 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF17DED27BAFBA300E22069 /* HomeModel.swift */; };
 		ECF17DF127BBC39100E22069 /* CollectionConcurrencyKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECF17DF027BBC39100E22069 /* CollectionConcurrencyKit */; };
@@ -53,6 +54,7 @@
 		EC2052DA2A4ADC750027C9A5 /* UINavigationController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		EC2052DE2A4AE1D10027C9A5 /* DownloadTableViewCell+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DownloadTableViewCell+.swift"; sourceTree = "<group>"; };
 		EC2052E12A4AE2840027C9A5 /* DownloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTableViewCell.swift; sourceTree = "<group>"; };
+		EC2052E42A4C28550027C9A5 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		ECF17DEB27BAA36000E22069 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		ECF17DED27BAFBA300E22069 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				EC2052CD2A4AD83D0027C9A5 /* model */,
 				EC2052D92A4ADB450027C9A5 /* cell */,
 				EC2052CC2A4AD81D0027C9A5 /* API */,
+				EC2052E32A4C283F0027C9A5 /* Util */,
 				EC2052DC2A4ADC790027C9A5 /* Extension */,
 				D1203EDF27B663D900C5AEC7 /* Assets.xcassets */,
 				D1203EE127B663D900C5AEC7 /* LaunchScreen.storyboard */,
@@ -152,6 +155,14 @@
 				EC2052DA2A4ADC750027C9A5 /* UINavigationController+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EC2052E32A4C283F0027C9A5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EC2052E42A4C28550027C9A5 /* UIImageView+.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				D1203ED727B663D700C5AEC7 /* AppDelegate.swift in Sources */,
 				EC2052E22A4AE2840027C9A5 /* DownloadTableViewCell.swift in Sources */,
 				EC2052D72A4ADB3F0027C9A5 /* HomeTableViewCell+.swift in Sources */,
+				EC2052E52A4C28550027C9A5 /* UIImageView+.swift in Sources */,
 				ECF17DEE27BAFBA300E22069 /* HomeModel.swift in Sources */,
 				EC2052C92A4AD7590027C9A5 /* HomeModel+.swift in Sources */,
 				D1203EED27B6671000C5AEC7 /* DetailViewController.swift in Sources */,

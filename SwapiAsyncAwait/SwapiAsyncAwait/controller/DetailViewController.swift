@@ -30,6 +30,12 @@ class DetailViewController: ViewController {
         return stackView
     }()
 
+    public let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -40,7 +46,7 @@ class DetailViewController: ViewController {
         super.viewDidAppear(animated)
     }
     
-    init(model: DetailModel, navigator: Navigator) {
+    private init(model: DetailModel, navigator: Navigator) {
         self.model = model
         super.init(navigator: navigator)
     }
@@ -59,6 +65,7 @@ extension DetailViewController{
     private func setup(){
         view.backgroundColor = .gray
         stackView.addArrangedSubview(titleLabel)
+        // stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(detailLabel)
         view.addSubview(stackView)
         NSLayoutConstraint
@@ -68,5 +75,14 @@ extension DetailViewController{
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
             ])
+    }
+}
+
+extension DetailViewController{
+    static func create(model: DetailModel,
+                       navigator: Navigator) -> DetailViewController {
+        let controller = DetailViewController.init(model: model,
+                                                   navigator: navigator)
+        return controller
     }
 }
